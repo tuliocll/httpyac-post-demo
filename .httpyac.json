@@ -1,0 +1,20 @@
+{
+  "environments": {
+    "$shared": {},
+    "stage": {
+      "host": "https://stage-dummyjson.com",
+      "username": "emilys",
+      "password": "emilyspass"
+    },
+    "dev": {
+      "host": "https://dev-dummyjson.com",
+      "username": "emilys",
+      "password": "emilyspass"
+    },
+    "prod": {
+      "host": "https://dummyjson.com",
+      "username": "{{$input Enter username $value: emilys}}",
+      "password": "{{$input Enter password $value: emilyspass}}"
+    }
+  }
+}

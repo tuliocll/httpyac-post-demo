@@ -1,0 +1,13 @@
+## Auth Login
+# @title login
+POST /auth/login
+Content-Type: application/json
+
+{
+    "username": "{{username}}",
+    "password": "{{password}}"
+}
+
+{{
+    $global.accessToken = response.parsedBody.accessToken
+}}
